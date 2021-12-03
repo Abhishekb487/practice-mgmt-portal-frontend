@@ -2,6 +2,20 @@
 .section-holder{
   height: 50vh;
 }
+
 .charting{
   font-size: 80%
+}
+
+.patient-header {
+  margin-top: 1.5em;
+  font-weight: bold;
+}
+
+.patient-items p {
+  font-size: medium;
+}
+
+.pri-insur-items, .sec-insur-items {
+  margin-bottom: 2.75em;
 }

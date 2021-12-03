@@ -1,55 +1,69 @@
-<div class="
-    charting
-    container-fluid
-    example-large-box
-    mat-elevation-z4
-    section-holder
-  ">
-  <div class="row h-100">
-    <div class="col-sm-6 col-lg-5">
-      <div class="row h-50" style="font-weight: bold;">
-        <!-- Patient Insurance details -->
-        <div class="col">
-          Patient Insurance details :
-          <br /><br />
-          <div class=" col row">
-            <p>Primary Insurance:</p> &nbsp; &nbsp;
-            <p>Visit Copay:</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="charting.component.css" />
+</head>
+
+<body>
+  <div class="
+        charting
+        container-fluid
+        example-large-box
+        mat-elevation-z4
+        section-holder
+      ">
+    <div class="row h-100">
+      <div class="col-sm-6 col-lg-12">
+        <div class="row h-50">
+          <!-- Patient Insurance details -->
+          <div class="col">
+            <div class="patient-header">
+              <h2> Patient Insurance </h2>
+            </div>
+            <div class="patient-items">
+              <div class="pri-insur-items">
+                <p>Primary Insurance: 12456</p>
+                <p>Visit Copay: $20</p>
+              </div>
+
+              <div class="sec-insur-items">
+                <p>Secondary Insurance: 23456</p>
+                <p>Visit Copay: $10</p>
+              </div>
+
+              <p>Next Appointment: 12/25/2021</p>
+
+            </div>
           </div>
-          <div class=" col row">
-            <p>Secondary Insurance:</p> &nbsp; &nbsp;
-            <p>Visit Copay:</p>
-          </div>
-          <br />
-          <p>Next Appointment: </p>
         </div>
-      </div>
-      <div class="row h-50">
-        <!-- Medical History -->
+        <!-- <div class="row h-50">
+          Medical History
         <div class="col">Medical History</div>
+      </div> -->
       </div>
-    </div>
 
-    <!-- Patient reports -->
-    <div class="col-6 col-lg-7">
-      <div class="row">
-        <!-- Physical Information -->
-        <div class="col-12 col-lg-4" style="font-weight: bold;">
-          Physical Information (Skeleton, Height, Weight)
-        </div>
+      <!-- Patient reports -->
+      <div class="col-6 col-lg-7">
+        <div class="row">
+          <!-- Physical Information -->
+          <div class="col-12 col-lg-4">
+            Physical Information (Skeleton, Height, Weight)
+          </div>
 
-        <!-- Patient Reports -->
-        <div class="col-12 col-lg-8" style="font-weight: bold;">
-          Patient reports (BMI, Blood Pressure , Smoking)
-          <br />
-          <mat-grid-list cols="4" rowHeight="50px">
-            <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
-              {{tile.text}}
-            </mat-grid-tile>
-          </mat-grid-list>
-
+          <!-- Patient Reports -->
+          <div class="col-12 col-lg-8">
+            Patient reports (BMI, Blood Pressure , Smoking)
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</body>
+
+</html>
